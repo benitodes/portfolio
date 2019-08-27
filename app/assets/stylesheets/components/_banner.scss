@@ -11,7 +11,7 @@ body {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
-  text-align: center;
+  text-align: right;
 }
 
 .hero {
@@ -23,24 +23,32 @@ body {
   margin-bottom: 200px;
   text-align: center;
   min-height: 63vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .project1 {
-  background-color: blue;
+  background-color: #FFC33F;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
   text-align: center;
   min-height: 650px;
-
 }
 
 .project2 {
-  background-color: gray;
+  background-color: #00AEEF;
+  color: white;
   margin-bottom: 200px;
   text-align: center;
   min-height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .project3 {
@@ -68,14 +76,14 @@ body {
   background-color: red;
   text-align: center;
   min-height: 650px;
-  margin-bottom: 200px;
+  margin-bottom: 20px;
 }
 
 .box9 {
   background-color: blue;
   text-align: center;
   min-height: 650px;
-  margin-bottom: 200px;
+  margin-bottom: 20px;
 }
 
 .title {
