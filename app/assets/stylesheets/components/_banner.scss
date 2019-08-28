@@ -1,8 +1,45 @@
-body {
+
+ body {
   margin-left: 20px;
   margin-right: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  align-items: center;
+  // grid-auto-row: minmax(100px, 100px);
+  grid-template-areas:
+    "hd"
+    "ho"
+    "t1"
+    "b1"
+    "b2"
+    "b3"
+    "t2"
+    "b4"
+    "b5"
+    "t3"
+    "b6"
+    "b7";
+}
+
+@media (min-width: 800px) {
+  body {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  // grid-auto-row: minmax(100px, 100px);
+  grid-template-areas:
+    "hd hd"
+    "ho ho"
+    "t1 t1"
+    "b1 b1"
+    "b2 b3"
+    "t2 t2"
+    "b4 b5"
+    "t3 t3"
+    "b6 b7";
+  }
 }
 
 html {
@@ -10,20 +47,12 @@ html {
 }
 
 .header {
-  // position: fixed;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-area: hd;
   text-align: center;
 }
 
-
 .hero {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-area: ho;
   text-align: center;
   min-height: 75vh;
   display: flex;
@@ -37,21 +66,15 @@ html {
 }
 
 .title1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-area: t1;
   font-size: 45px;
 }
 
 .box1 {
+  grid-area: b1;
   z-index: -1;
   margin-top: -94px;
   background-color: #FFC33F;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 5;
   text-align: center;
   min-height: 650px;
   display: flex;
@@ -60,13 +83,8 @@ html {
 }
 
 .box2 {
+  grid-area: b2;
   background-color: #00AEEF;
-  color: white;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 5;
-  grid-row-end: 6;
-  margin-bottom: 150px;
   text-align: center;
   min-height: 650px;
   display: flex;
@@ -75,12 +93,8 @@ html {
 }
 
 .box3 {
+  grid-area: b3;
   background-color: orange;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 5;
-  grid-row-end: 6;
-  margin-bottom: 150px;
   text-align: center;
   min-height: 650px;
   display: flex;
@@ -89,22 +103,15 @@ html {
 }
 
 .title2 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 6;
-  grid-row-end: 7;
+  grid-area: t2;
   font-size: 45px;
 }
 
 .box4 {
+  grid-area: b4;
   z-index: -1;
   margin-top: -94px;
   background-color: red;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 7;
-  grid-row-end: 8;
-  margin-bottom: 150px;
   text-align: center;
   min-height: 650px;
   display: flex;
@@ -113,14 +120,10 @@ html {
 }
 
 .box5 {
+  grid-area: b5;
   z-index: -1;
   margin-top: -94px;
   background-color: blue;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 7;
-  grid-row-end: 8;
-  margin-bottom: 150px;
   text-align: center;
   min-height: 650px;
   display: flex;
@@ -129,22 +132,16 @@ html {
 }
 
 .title3 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 8;
-  grid-row-end: 9;
+  grid-area: t3;
   font-size: 45px;
 }
 
 .box6 {
+  grid-area: b6;
   z-index: -1;
   margin-top: -94px;
   background-color: #1E2428;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 9;
-  grid-row-end: 10;
-  text-align: left;
+  text-align: center;
   min-height: 650px;
   margin-bottom: 20px;
   display: flex;
@@ -153,17 +150,18 @@ html {
 }
 
 .box7 {
+  grid-area: b7;
   z-index: -1;
   margin-top: -94px;
   text-align: center;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 9;
-  grid-row-end: 10;
   min-height: 650px;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url('contact.jpg');
   background-size: cover;
+  max-width: 100%;
 }
 
 .boxtext {
