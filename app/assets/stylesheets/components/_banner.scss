@@ -159,7 +159,7 @@ body {
 
 @media (min-width: 800px) {
   body {
-  max-width: 1200px;
+  max-width: 1280px;
   margin-left: 20px;
   margin-right: 20px;
   display: grid;
@@ -340,6 +340,7 @@ body {
   .box4 {
     grid-area: b4;
     z-index: -1;
+    position: relative;
     margin-top: -94px;
     background-color: #C92404;
     text-align: center;
@@ -347,6 +348,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .boxtext-box4 {
+    position: absolute;
+    padding: 0 50px 40px;
+    color: white;
+  }
+
+  .boxtext-box4 h2 {
+    font-size: 60px;
+    font-weight: stronger;
+  }
+
+  .boxtext-box4 h3 {
+    font-size: 16px;
+    font-weight: lighter;
   }
 
   // box 5
@@ -361,10 +378,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('le-wagon-alumni.png');
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)), url('le-wagon-alumni.png');
     background-size: cover;
   }
-
 
   .boxtext-box5 {
     position: absolute;
@@ -387,7 +403,7 @@ body {
     max-width: 160px;
     left: 50%;
     margin-left: -80px;
-    top: 450px;
+    top: 470px;
     position: absolute;
   }
 
@@ -404,7 +420,7 @@ body {
     position: relative;
     margin-top: -94px;
     background-color: #1E2428;
-    text-align: center;
+    // text-align: center;
     height: 650px;
     margin-bottom: 20px;
     display: flex;
@@ -451,7 +467,7 @@ body {
 
 @media (min-width: 1200px) {
   body {
-  width: 1200px;
+  width: 1280px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
