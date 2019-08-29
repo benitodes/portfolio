@@ -1,2 +1,104 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+<div class="header">
+    <div id="menuToggle">
+      <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="#section-1"><li>Work</li></a>
+          <a href="#section-2"><li>Skills</li></a>
+          <a href="#section-3"><li>Contact</li></a>
+        </ul>
+    </div>
+</div>
+
+<div class="hero">
+  <h1>Benoit Destresse.</h1>
+    <div class="script">
+      <p class="element"></p>
+    </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+      <script>
+
+      var options = {
+        strings: ["Hello there, welcome to my portfolio", "I'm a full stack developer", "I love to build digital products ", "Hurry, I'm currently available for freelance"],
+        typeSpeed: 50,
+        showCursor: false,
+        loopCount: 3,
+      }
+
+      var typed = new Typed(".element", options);
+      </script>
+</div>
+
+<div class="title1">
+  <a id="section-1"></a>
+  <h1>Work.</h1>
+</div>
+
+<div class="box1">
+  <div class="box1-1">
+    <%= image_tag "PW-iPhone-1.png", class:"img" %>
+  </div>
+</div>
+
+<div class="box1b">
+  <div class="boxtext-box1b">
+    <h2>PocketWise</h2>
+    <h3>PocketWise is an app currently in beta where kids can play educational games to unlock their pocket money. This is a personal project we've built entirely with a team of 3 developpers. The app is to be launched in France in Q4 2019.</h3>
+    </div>
+</div>
+
+<div class="box2">
+  <div class="boxtext-box2">
+    <h2>Toysly</h2>
+    <h3>Toysly is an RbnB clone but with toys!
+    find a toy near you for rent, filter by categories, select available dates and book it. Or put your toys for rent, add pictures, description, calendar and reviews.</h3>
+  </div>
+    <%= image_tag "Toysle-Macbook-1.png", class:"img" %>
+</div>
+
+<div class="box3">
+  <div class="boxtext-box3">
+    <h2>Tabrun</h2>
+    <h3>TabRun is a digital wallet embedded in an innovative web-app that lets restaurants pre-sell in store credit ("Tabs") to customers, allowing them to raise money and generate sales by offering great deals on their food.</h3>
+    </div>
+    <%= image_tag "Tabrun-iphone-1-crop.png", class:"img" %>
+</div>
+
+<div class="title2">
+    <a id="section-2"></a>
+    <h1>Skills.</h1>
+</div>
+
+<div class="box4">
+  <div class="boxtext">
+    <h2>skills</h2>
+  </div>
+</div>
+<div class="box5">
+  <div class="boxtext">
+    <h2>wagon</h2>
+  </div>
+</div>
+
+<div class="title3">
+    <a id="section-3"></a>
+    <h1>Contact.</h1>
+</div>
+
+<div class="box6">
+  <div class="boxtext">
+    <h3>Need to build a website?</h3>
+    <h3>or a great new app?</h3>
+    <h3>or just want to chat...</h3>
+    <p>Hit me up!</p>
+    <p>benoit.destresse@gmail.com</p>
+  </div>
+</div>
+
+<div class="box7">
+</div>
+
