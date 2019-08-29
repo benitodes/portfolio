@@ -1,15 +1,16 @@
+// smartphone
 
- body {
-  margin-left: 20px;
-  margin-right: 20px;
+body {
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  // grid-auto-row: minmax(100px, 100px);
   grid-template-areas:
     "hd"
     "ho"
     "t1"
+    "b1b"
     "b1"
     "b2"
     "b3"
@@ -20,20 +21,156 @@
     "b6"
     "b7";
 }
+// html {
+//     scroll-behavior: smooth;
+//   }
+
+//   .header {
+//     grid-area: hd;
+//     text-align: center;
+//   }
+
+//   .hero {
+//     grid-area: ho;
+//     text-align: center;
+//     min-height: 50vh;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-direction: column;
+//   }
+
+//   .hero h1 {
+//     position: absolute;
+//     top: 23%;
+//   }
+
+//   .script {
+//     position: absolute;
+//     top: 30%;
+//     min-height: 100px;
+//   }
+
+//   .title1 {
+//     grid-area: t1;
+//     font-size: 25px;
+//   }
+
+//   .box1 {
+//     grid-area: b1;
+//     z-index: -1;
+//     margin-top: -52px;
+//     background-color: #FFC33F;
+//     text-align: center;
+//     min-height: 650px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+
+//   .box2 {
+//     grid-area: b2;
+//     background-color: #00AEEF;
+//     text-align: center;
+//     min-height: 650px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+
+//   .box3 {
+//     grid-area: b3;
+//     background-color: orange;
+//     text-align: center;
+//     min-height: 650px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+
+//   .title2 {
+//     grid-area: t2;
+//     font-size: 25px;
+//   }
+
+//   .box4 {
+//     grid-area: b4;
+//     z-index: -1;
+//     margin-top: -52px;
+//     background-color: red;
+//     text-align: center;
+//     min-height: 650px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+
+//   .box5 {
+//     grid-area: b5;
+//     z-index: -1;
+//     margin-top: -52px;
+//     background-color: blue;
+//     text-align: center;
+//     min-height: 650px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+
+//   .title3 {
+//     grid-area: t3;
+//     font-size: 25px;
+//   }
+
+//   .box6 {
+//     grid-area: b6;
+//     z-index: -1;
+//     margin-top: -52px;
+//     background-color: #1E2428;
+//     text-align: center;
+//     min-height: 650px;
+//     margin-bottom: 20px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+
+//   .box7 {
+//     grid-area: b7;
+//     z-index: -1;
+//     margin-top: -94px;
+//     text-align: center;
+//     min-height: 650px;
+//     margin-bottom: 0px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     background-image: url('contact.jpg');
+//     background-size: cover;
+//     max-width: 100%;
+//   }
+
+//   .boxtext {
+//     padding: 0 50px 40px;
+//     color: white;
+//   }
+
+// normal screen
 
 @media (min-width: 800px) {
   body {
+  max-width: 1200px;
   margin-left: 20px;
   margin-right: 20px;
   display: grid;
+  // text-align: center;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  // grid-auto-row: minmax(100px, 100px);
   grid-template-areas:
     "hd hd"
     "ho ho"
     "t1 t1"
-    "b1 b1"
+    "b1 b1b"
     "b2 b3"
     "t2 t2"
     "b4 b5"
@@ -42,129 +179,266 @@
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
+  html {
+    scroll-behavior: smooth;
+  }
 
-.header {
-  grid-area: hd;
-  text-align: center;
-}
+  .header {
+    grid-area: hd;
+    text-align: center;
+  }
 
-.hero {
-  grid-area: ho;
-  text-align: center;
-  min-height: 75vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+  .hero {
+    grid-area: ho;
+    text-align: center;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-.script {
-  min-height: 100px;
-}
+  .hero h1 {
+    position: absolute;
+    top: 40%;
+  }
 
-.title1 {
-  grid-area: t1;
-  font-size: 45px;
-}
+  .script {
+    position: absolute;
+    top: 47%;
+    min-height: 100px;
+  }
 
-.box1 {
-  grid-area: b1;
-  z-index: -1;
-  margin-top: -94px;
-  background-color: #FFC33F;
-  text-align: center;
-  min-height: 650px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .title1 {
+    grid-area: t1;
+    font-size: 45px;
+  }
 
-.box2 {
-  grid-area: b2;
-  background-color: #00AEEF;
-  text-align: center;
-  min-height: 650px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  // box 1
 
-.box3 {
-  grid-area: b3;
-  background-color: orange;
-  text-align: center;
-  min-height: 650px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .box1 {
+    grid-area: b1;
+    z-index: -1;
+    margin-top: -94px;
+    background-color: #FFC33F;
+    text-align: center;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.title2 {
-  grid-area: t2;
-  font-size: 45px;
-}
+  .box1b {
+    grid-area: b1b;
+    position: relative;
+    z-index: -1;
+    margin-top: -94px;
+    background-color: #FFC33F;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.box4 {
-  grid-area: b4;
-  z-index: -1;
-  margin-top: -94px;
-  background-color: red;
-  text-align: center;
-  min-height: 650px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .box1-1 img {
+    height: 500px;
+  }
 
-.box5 {
-  grid-area: b5;
-  z-index: -1;
-  margin-top: -94px;
-  background-color: blue;
-  text-align: center;
-  min-height: 650px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .boxtext-box1b {
+    position: absolute;
+    top: 43px;
+    padding: 0 50px 40px;
+    color: white;
+  }
 
-.title3 {
-  grid-area: t3;
-  font-size: 45px;
-}
+  .boxtext-box1b h2 {
+    font-size: 60px;
+    font-weight: stronger;
+  }
 
-.box6 {
-  grid-area: b6;
-  z-index: -1;
-  margin-top: -94px;
-  background-color: #1E2428;
-  text-align: center;
-  min-height: 650px;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .boxtext-box1b h3 {
+    font-size: 16px;
+    font-weight: lighter;
+  }
 
-.box7 {
-  grid-area: b7;
-  z-index: -1;
-  margin-top: -94px;
-  text-align: center;
-  min-height: 650px;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url('contact.jpg');
-  background-size: cover;
+  // box 2
+
+  .box2 {
+    grid-area: b2;
+    position: relative;
+    background-color: #00AEEF;
+    height: 650px;
+  }
+
+  .box2 img {
+    max-width: 500px;
+    left: 50%;
+    margin-left: -250px;
+    top: 329px;
+    position: absolute;
+  }
+
+  .boxtext-box2 {
+    position: absolute;
+    top: 10px;
+    padding: 0 50px 40px;
+    color: white;
+  }
+
+  .boxtext-box2 h2 {
+    font-size: 60px;
+    font-weight: stronger;
+  }
+
+  .boxtext-box2 h3 {
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+
+ // box 3
+
+  .box3 {
+    grid-area: b3;
+    position: relative;
+    background-color: orange;
+    height: 650px;
+  }
+
+  .box3 img {
+    max-width: 280px;
+    left: 50%;
+    margin-left: -140px;
+    top: 319px;
+    position: absolute;
+  }
+
+  .boxtext-box3 {
+    position: absolute;
+    top: 10px;
+    padding: 0 50px 40px;
+    color: white;
+  }
+
+  .boxtext-box3 h2 {
+    font-size: 60px;
+    font-weight: stronger;
+  }
+
+  .boxtext-box3 h3 {
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+
+
+
+  .title2 {
+    grid-area: t2;
+    font-size: 45px;
+  }
+
+  // box 4
+
+  .box4 {
+    grid-area: b4;
+    z-index: -1;
+    margin-top: -94px;
+    background-color: red;
+    text-align: center;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // box 5
+
+  .box5 {
+    grid-area: b5;
+    z-index: -1;
+    margin-top: -94px;
+    background-color: blue;
+    text-align: center;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title3 {
+    grid-area: t3;
+    font-size: 45px;
+  }
+
+  // box 6
+
+  .box6 {
+    grid-area: b6;
+    z-index: -1;
+    margin-top: -94px;
+    background-color: #1E2428;
+    text-align: center;
+    height: 650px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // box 7
+
+  .box7 {
+    grid-area: b7;
+    z-index: -1;
+    margin-top: -94px;
+    text-align: center;
+    height: 650px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('contact.jpg');
+    background-size: cover;
+    max-width: 100%;
+  }
+
+  .boxtext {
+    padding: 0 50px 40px;
+    color: white;
+  }
+
+  .boxtext h2 {
+    font-size: 60px;
+    font-weight: stronger;
+  }
+
+  .boxtext h3 {
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+
+@media (min-width: 1200px) {
+  body {
+  width: 1200px;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-template-areas:
+    "hd hd"
+    "ho ho"
+    "t1 t1"
+    "b1 b1b"
+    "b2 b3"
+    "t2 t2"
+    "b4 b5"
+    "t3 t3"
+    "b6 b7";
+  }
 }
 
-.boxtext {
-  padding: 0 50px 40px;
-  color: white;
-}
+
