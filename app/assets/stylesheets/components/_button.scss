@@ -1,0 +1,16 @@
+.button {
+  color: black;
+  position: absolute;
+  top: 54%;
+  border: 1px solid black;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  // opacity: 0.5;
+  // transition: opacity 0.3s ease;
+}
+
+.button:hover + .button {
+  display: none;
+}
+

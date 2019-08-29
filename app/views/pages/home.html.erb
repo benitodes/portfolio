@@ -15,9 +15,11 @@
 
 <div class="hero">
   <h1>Benoit Destresse.</h1>
+
     <div class="script">
       <p class="element"></p>
     </div>
+    <a class="button" href="#section-3">Contact</a>
 
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
       <script>
@@ -31,7 +33,10 @@
 
       var typed = new Typed(".element", options);
       </script>
+
 </div>
+
+
 
 <div class="title1">
   <a id="section-1"></a>
@@ -44,13 +49,16 @@
   </div>
 </div>
 
+
+
 <div class="box1b">
   <div class="boxtext-box1b">
     <h2>PocketWise</h2>
     <h3>PocketWise is an app currently in beta where kids can play educational games to unlock their pocket money.</h3>
     <h3>This is a personal project built entirely with Ruby on Rails framework.</h3>
     <h3>The app is to be launched in France in Q4 2019.</h3>
-    </div>
+  </div>
+
 </div>
 
 <div class="box2">
@@ -112,7 +120,7 @@
     <h3>a great new app?</h3>
     <h3>or just want to chat...</h3>
     <p>Hit me up!</p>
-    <p>benoit.destresse@gmail.com</p>
+    <%= mail_to "benoit.destresse@gmail.com" %>
   </div>
 </div>
 

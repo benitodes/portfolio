@@ -213,13 +213,14 @@ body {
   // box 1
 
   .title1 {
+    z-index: 1;
     grid-area: t1;
     font-size: 45px;
   }
 
   .box1 {
     grid-area: b1;
-    z-index: -1;
+    // z-index: -1;
     margin-top: -94px;
     background-color: #FFC33F;
     text-align: center;
@@ -232,7 +233,7 @@ body {
   .box1b {
     grid-area: b1b;
     position: relative;
-    z-index: -1;
+    // z-index: -1;
     margin-top: -94px;
     background-color: #FFC33F;
     height: 650px;
@@ -333,13 +334,14 @@ body {
   // box 4
 
   .title2 {
+    z-index: 1;
     grid-area: t2;
     font-size: 45px;
   }
 
   .box4 {
     grid-area: b4;
-    z-index: -1;
+    // z-index: -1;
     position: relative;
     margin-top: -94px;
     background-color: #C92404;
@@ -370,7 +372,7 @@ body {
 
   .box5 {
     grid-area: b5;
-    z-index: -1;
+    // z-index: -1;
     position: relative;
     margin-top: -94px;
     // text-align: center;
@@ -410,13 +412,14 @@ body {
   // box 6
 
   .title3 {
+    z-index: 1;
     grid-area: t3;
     font-size: 45px;
   }
 
   .box6 {
     grid-area: b6;
-    z-index: -1;
+    // z-index: -1;
     position: relative;
     margin-top: -94px;
     background-color: #1E2428;
@@ -445,11 +448,16 @@ body {
     font-weight: lighter;
   }
 
+  .boxtext-box6 a {
+    color: white;
+  }
+
+
   // box 7
 
   .box7 {
     grid-area: b7;
-    z-index: -1;
+    // z-index: -1;
     margin-top: -94px;
     text-align: center;
     height: 650px;
