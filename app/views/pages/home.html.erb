@@ -15,9 +15,11 @@
 
 <div class="hero">
   <h1>Benoit Destresse.</h1>
+
     <div class="script">
       <p class="element"></p>
     </div>
+    <a class="button" href="#section-3">Contact</a>
 
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
       <script>
@@ -31,7 +33,10 @@
 
       var typed = new Typed(".element", options);
       </script>
+
 </div>
+
+
 
 <div class="title1">
   <a id="section-1"></a>
@@ -40,22 +45,27 @@
 
 <div class="box1">
   <div class="box1-1">
-    <%= image_tag "PW-iPhone-1.png", class:"img" %>
+    <%= image_tag "PW-iPhone.png", class:"img" %>
   </div>
 </div>
+
+
 
 <div class="box1b">
   <div class="boxtext-box1b">
     <h2>PocketWise</h2>
-    <h3>PocketWise is an app currently in beta where kids can play educational games to unlock their pocket money. This is a personal project we've built entirely with a team of 3 developpers. The app is to be launched in France in Q4 2019.</h3>
-    </div>
+    <h3>PocketWise is an app currently in beta where kids can play educational games to unlock their pocket money.</h3>
+    <h3>This is a personal project built entirely with Ruby on Rails framework.</h3>
+    <h3>The app is to be launched in France in Q4 2019.</h3>
+  </div>
+
 </div>
 
 <div class="box2">
   <div class="boxtext-box2">
     <h2>Toysly</h2>
-    <h3>Toysly is an RbnB clone but with toys!
-    find a toy near you for rent, filter by categories, select available dates and book it. Or put your toys for rent, add pictures, description, calendar and reviews.</h3>
+    <h3>Toysly is an RbnB clone but with toys!</h3>
+     <h3>find a toy near you for rent, filter by categories, select available dates and book it. Or put your toys for rent, add pictures, description, calendar and reviews.</h3>
   </div>
     <%= image_tag "Toysle-Macbook-1.png", class:"img" %>
 </div>
@@ -63,7 +73,8 @@
 <div class="box3">
   <div class="boxtext-box3">
     <h2>Tabrun</h2>
-    <h3>TabRun is a digital wallet embedded in an innovative web-app that lets restaurants pre-sell in store credit ("Tabs") to customers, allowing them to raise money and generate sales by offering great deals on their food.</h3>
+    <h3>TabRun is a digital wallet</h3>
+    <h3>Embedded in an innovative web-app that lets restaurants pre-sell in store credit ("Tabs") to customers, allowing them to raise money and generate sales by offering great deals on their food.</h3>
     </div>
     <%= image_tag "Tabrun-iphone-1-crop.png", class:"img" %>
 </div>
@@ -74,14 +85,28 @@
 </div>
 
 <div class="box4">
-  <div class="boxtext">
-    <h2>skills</h2>
+  <div class="boxtext-box4">
+    <h3>#Html5</h3>
+    <h3>#Css</h3>
+    <h3>#Javascript ES6</h3>
+    <h3>#React</h3>
+    <h3>#Ruby</h3>
+    <h3>#Ruby on Rails</h3>
+    <h3>#SQL</h3>
+    <h3>#API</h3>
+    <h3>#Geomapping</h3>
   </div>
 </div>
+
 <div class="box5">
-  <div class="boxtext">
-    <h2>wagon</h2>
-  </div>
+    <div class="boxtext-box5">
+      <h2>Le Wagon graduate</h2>
+      <h3>Ranked world best coding bootcamp in 2019 by switchup.</h3>
+      <h3>Le wagon is an intensive, full-time international bootcamp geared toward entrepreneurs who want to gain coding skills. 450+ hours of coding in 9 weeks, which includes building their own web app.
+      <h3>After completing the program, students have access to an international alumni network of 5,000+ developers for career support and community.</h3>
+    </div>
+    <%= image_tag "le-wagon-best.png", class:"img" %>
+
 </div>
 
 <div class="title3">
@@ -90,12 +115,12 @@
 </div>
 
 <div class="box6">
-  <div class="boxtext">
-    <h3>Need to build a website?</h3>
-    <h3>or a great new app?</h3>
+  <div class="boxtext-box6">
+    <h2>Need to build a website?</h2>
+    <h3>a great new app?</h3>
     <h3>or just want to chat...</h3>
     <p>Hit me up!</p>
-    <p>benoit.destresse@gmail.com</p>
+    <%= mail_to "benoit.destresse@gmail.com" %>
   </div>
 </div>
 
