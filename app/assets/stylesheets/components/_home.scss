@@ -349,6 +349,7 @@ body {
   }
 
   .hero {
+    position: relative;
     grid-area: ho;
     text-align: center;
     min-height: 75vh;
@@ -360,12 +361,12 @@ body {
 
   .hero h1 {
     position: absolute;
-    top: 40%;
+    top: 36%;
   }
 
   .script {
     position: absolute;
-    top: 47%;
+    top: 45%;
     min-height: 100px;
   }
 

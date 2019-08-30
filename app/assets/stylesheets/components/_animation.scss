@@ -1,0 +1,217 @@
+
+// Ruby on rails
+
+.rails {
+  /* Some layout code… */
+  animation: xrails 15s infinite ease-out;
+  position: relative;
+  top: 50%;
+  right: 20%;
+}
+
+.rails::after {
+  /* Render dot */
+  background-image: url('rails.png');
+  background-size: contain;
+  content: '';
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  animation: yrails 15s infinite ease-in;
+}
+
+@keyframes xrails {
+  50% {
+    animation-timing-function: ease-out;
+    transform: translateX(50px);
+  }
+}
+
+@keyframes yrails {
+  50% {
+    animation-timing-function: ease-in;
+    transform: translateY(-50px);
+  }
+}
+
+// Ruby
+
+.ruby {
+  /* Some layout code… */
+  animation: xruby 13s infinite ease-out;
+  position: relative;
+  top: -20%;
+  right: -30%;
+}
+
+.ruby::after {
+  /* Render dot */
+  background-image: url('ruby.png');
+  background-size: contain;
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  animation: yruby 13s infinite ease-in;
+}
+
+@keyframes xruby {
+  50% {
+    animation-timing-function: ease-out;
+    transform: translateX(-75px);
+  }
+}
+
+@keyframes yruby {
+  50% {
+    animation-timing-function: ease-in;
+    transform: translateY(75px);
+  }
+}
+
+// Html
+
+.html {
+  /* Some layout code… */
+  animation: xhtml 18s infinite ease-out;
+  position: relative;
+  top: -10%;
+  right: 30%;
+}
+
+.html::after {
+  /* Render dot */
+  background-image: url('html.png');
+  background-size: contain;
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  animation: yhtml 18s infinite ease-in;
+}
+
+@keyframes xhtml {
+  50% {
+    animation-timing-function: ease-out;
+    transform: translateX(-100px);
+  }
+}
+
+@keyframes yhtml {
+  50% {
+    animation-timing-function: ease-in;
+    transform: translateY(100px);
+  }
+}
+
+// css
+
+.css {
+  /* Some layout code… */
+  animation: xcss 17s infinite ease-out;
+  position: relative;
+  top: 10%;
+  right: -20%;
+}
+
+.css::after {
+  /* Render dot */
+  background-image: url('css.png');
+  background-size: contain;
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  animation: ycss 17s infinite ease-in;
+}
+
+@keyframes xcss {
+  50% {
+    animation-timing-function: ease-out;
+    transform: translateX(200px);
+  }
+}
+
+@keyframes ycss {
+  50% {
+    animation-timing-function: ease-in;
+    transform: translateY(100px);
+  }
+}
+
+// js
+
+.js {
+  /* Some layout code… */
+  animation: xjs 20s infinite ease-out;
+  position: relative;
+  top: 5%;
+  right: -10%;
+}
+
+.js::after {
+  /* Render dot */
+  background-image: url('js.png');
+  background-size: contain;
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  animation: yjs 20s infinite ease-in;
+}
+
+@keyframes xjs {
+  50% {
+    animation-timing-function: ease-out;
+    transform: translateX(-50px);
+  }
+}
+
+@keyframes yjs {
+  50% {
+    animation-timing-function: ease-in;
+    transform: translateY(50px);
+  }
+}
+
+// react
+
+.react {
+  /* Some layout code… */
+  animation: xreact 30s infinite ease-out;
+  position: relative;
+  top: -50%;
+  right: 10%;
+}
+
+.react::after {
+  /* Render dot */
+  background-image: url('react.png');
+  background-size: contain;
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  animation: yreact 30s infinite ease-in;
+}
+
+@keyframes xreact {
+  50% {
+    animation-timing-function: ease-out;
+    transform: translateX(-100px);
+  }
+}
+
+@keyframes yreact {
+  50% {
+    animation-timing-function: ease-in;
+    transform: translateY(100px);
+  }
+}
+
