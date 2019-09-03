@@ -1,3 +1,9 @@
+.wrapper {
+position: absolute;
+width: 100%;
+overflow-x: hidden;
+}
+
 // smartphone
 
 @media (max-width: 800px) {
@@ -23,6 +29,11 @@ body {
     "t3"
     "b6"
     "b7";
+}
+.wrapper {
+position: absolute;
+width: 100%;
+overflow-x: hidden;
 }
   html {
     scroll-behavior: smooth;
